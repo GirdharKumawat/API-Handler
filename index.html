@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Handler</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h2>API Handler</h2>
+        
+        <div class="form-group">
+            <label for="apiInput" class="form-label">API Endpoint</label>
+            <input type="text" id="apiInput" class="form-control" placeholder="Enter API URL">
+        </div>
+        
+        <div class="form-group">
+            <label for="keyInput" class="form-label">Key to Find</label>
+            <input type="text" id="keyInput" class="form-control" placeholder="Enter Key">
+        </div>
+        
+        <button id="getCodeBtn" class="btn">Generate Code</button>
+        
+        <div id="outputSection" style="display:none;">
+            <div class="code-container">
+                <h4>Path <span id="copyIcon" class="copy-icon">📋</span></h4>
+                <pre id="outputCode" class="code-box"></pre>
+            </div>
+            <div class="code-container">
+                <h4>Value</h4>
+                <pre id="outputValue" class="code-box"></pre>
+            </div>
+        </div>
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html> 
